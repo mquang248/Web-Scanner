@@ -36,7 +36,7 @@ A powerful and modern web application security scanner that helps identify commo
 - Remediation recommendations
 
 ## Installation
-
+  Download Python from [python.org](https://www.python.org/downloads/)
 ### Linux
 ```bash
 # Clone the repository
@@ -57,17 +57,13 @@ pip install -r requirements.txt
 git clone https://github.com/248/web-scanner.git
 cd web-scanner
 
-# Create virtual environment
-python -m venv venv
-.\venv\Scripts\activate
-
 # Install dependencies
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-Basic scan:
+Basic scan (Linux):
 ```bash
 ./scanner.py --url https://example.com
 ```
@@ -75,6 +71,15 @@ Basic scan:
 Advanced options:
 ```bash
 ./scanner.py --url https://example.com --depth 3 --threads 10 --verbose --html
+```
+Basic scan (Windows):
+```bash
+py scanner.py --url https://example.com
+```
+
+Advanced options:
+```bash
+py scanner.py --url https://example.com --depth 3 --threads 10 --verbose --html
 ```
 
 Parameters:
